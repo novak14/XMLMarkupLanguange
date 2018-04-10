@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="bakalarska_prace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="nazev_bakalarske_prace"/>
+        <xs:element name="jmeno_autora">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="pohlavi"/>
+                <xs:attribute type="xs:integer" name="vek"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="jmeno_vedouciho">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="nazev_katedry"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="prakticka_cast">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="program" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="programovaci_jazyk">
+                    <xs:complexType>
+                      <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                          <xs:attribute type="xs:decimal" name="verze"/>
+                        </xs:extension>
+                      </xs:simpleContent>
+                    </xs:complexType>
+              </xs:element>
+                    <xs:element type="xs:boolean" name="web_verze"/>
+                    <xs:element type="xs:boolean" name="desktop_verze"/>
+                    <xs:element type="xs:string" name="vyvojove_prostredi"/>
+                    <xs:element name="datum_testu">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:integer" name="den"/>
+                          <xs:element type="xs:integer" name="mesic"/>
+                          <xs:element type="xs:integer" name="rok"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="cas_testu">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:integer" name="hodina"/>
+                          <xs:element type="xs:integer" name="minuta"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="pocitac">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="typPC" name="typ_pocitace"/>
+                          <xs:element type="xs:decimal" name="vykon_CPU_GHZ"/>
+                          <xs:element type="xs:integer" name="pocet_jader_CPU"/>
+                          <xs:element type="velikostRAM" name="velikost_RAM_GB"/>
+                          <xs:element type="typDisku" name="typ_disku"/>
+                          <xs:element type="xs:integer" name="velikost_disku_GB"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="znacka"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="framework">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="pristup" name="nazev_frameworku" />
+                          <xs:element type="xs:decimal" name="verze_frameworku" />
+                          <xs:element type="xs:string" name="autor_frameworku"/>
+                          <xs:element type="xs:boolean" name="knizni_verze"/>
+                          <xs:element type="xs:boolean" name="ORM"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="databaze">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="nazevDatabaze" name="nazev_databaze"/>
+                          <xs:element type="xs:string" name="autor_databaze"/>
+                          <xs:element type="xs:integer" name="pocet_tabulek"/>
+                          <xs:element name="tabulka" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="nazev_tabulky"/>
+                                <xs:element type="xs:integer" name="pocet_sloupcu"/>
+                                <xs:element type="xs:integer" name="pocet_radku"/>
+                                <xs:element type="xs:integer" name="pocet_cizich_klicu"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:integer" name="id_tabulky" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:decimal" name="verze_databaze"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="vysledky">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nacitani">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:integer" name="pocet_iteraci" />
+                                <xs:element type="xs:decimal" name="vysledek_v_ms" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ukladani">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:integer" name="pocet_iteraci" />
+                                <xs:element type="xs:decimal" name="vysledek_v_ms" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="aktualizace">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:integer" name="pocet_iteraci" />
+                                <xs:element type="xs:decimal" name="vysledek_v_ms" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="required"/>
+
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="pristup">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Dapper" />
+      <xs:enumeration value="DapperAsync" />
+      <xs:enumeration value="ADO.NET" />
+      <xs:enumeration value="ADO.NET Async" />
+      <xs:enumeration value="Entity Framework" />
+      <xs:enumeration value="Entity Framework Async" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="typPC">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Notebook" />
+      <xs:enumeration value="Laptop" />
+      <xs:enumeration value="Stolní počítač" />
+      <xs:enumeration value="Computer" />
+      <xs:enumeration value="PC" />
+    </xs:restriction>
+  </xs:simpleType>
+    <xs:simpleType name="typDisku">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HDD" />
+      <xs:enumeration value="SSD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="nazevDatabaze">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MSSQL" />
+      <xs:enumeration value="Microsoft SQL Server" />
+      <xs:enumeration value="MySql" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="velikostRAM">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="4"/>
+      <xs:maxInclusive value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pocetJader">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
+</xs:schema>
