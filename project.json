@@ -1,0 +1,357 @@
+        {
+            "Nazev bakalarske prace": "Porovn�n� n�stroj� pro p��stup k datab�zi na platform� .NET",
+            "Jmeno autora": "Marcel Nov�k",
+            "Jmeno vedouciho": "Jan Masner",
+            "Program":
+            [
+            
+                {
+                "ID": "5",
+                "Programovaci jazyk": "C#",
+                "Web verze": "true",
+                "Desktop verze": "false",
+                "Vyvojove prostredi": "Visual Studio 2017",
+                "Datum testu": {
+                "Den": "04",
+                "Mesic": "04",
+                "Rok": "2018"
+                },
+                "Cas testu": {
+                "Hodina": "10",
+                "Minuta": "0"
+                },
+                "Pocitac": {
+                "Typ pocitace": "Notebook",
+                "Vykon CPU v GHZ": "2.2",
+                "Pocet jader CPU": "2",
+                "Velikost RAM": "8",
+                "Typ disku": "SSD",
+                "Velikost disku v GB": "256"
+                },
+                "Framework": {
+                "Nazev frameworku": "ADO.NET Async",
+                "Verze frameworku": "7.4",
+                "Autor frameworku": "Microsoft",
+                "Knizni verze": "true",
+                "ORM": "false"
+                },
+                "Databaze": {
+                "Nazev databaze": "MSSQL",
+                "Autor databaze": "Microsoft",
+                "Pocet tabulek": "1",
+                "Tabulka":
+                [
+                
+                    {
+                    "ID tabulky": "1",
+                    "Nazev tabulky": "Uzivatele",
+                    "Pocet sloupcu": "10",
+                    "Pocet radku": "1000",
+                    "Pocet cizich klicu": "0"
+                    }
+                    
+                ]
+                },
+                "Vysledky": {
+                    "Nacitani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "600"
+                    },
+                    "Ukladani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "75"
+                    },
+                    "Aktualizace": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "120"
+                    }
+                }
+                }
+                ,
+                {
+                "ID": "4",
+                "Programovaci jazyk": "C#",
+                "Web verze": "true",
+                "Desktop verze": "false",
+                "Vyvojove prostredi": "Visual Studio 2017",
+                "Datum testu": {
+                "Den": "04",
+                "Mesic": "04",
+                "Rok": "2018"
+                },
+                "Cas testu": {
+                "Hodina": "10",
+                "Minuta": "0"
+                },
+                "Pocitac": {
+                "Typ pocitace": "Notebook",
+                "Vykon CPU v GHZ": "2.2",
+                "Pocet jader CPU": "2",
+                "Velikost RAM": "8",
+                "Typ disku": "SSD",
+                "Velikost disku v GB": "256"
+                },
+                "Framework": {
+                "Nazev frameworku": "DapperAsync",
+                "Verze frameworku": "1.2",
+                "Autor frameworku": "Stack Overflow",
+                "Knizni verze": "false",
+                "ORM": "true"
+                },
+                "Databaze": {
+                "Nazev databaze": "MSSQL",
+                "Autor databaze": "Microsoft",
+                "Pocet tabulek": "2",
+                "Tabulka":
+                [
+                
+                    {
+                    "ID tabulky": "1",
+                    "Nazev tabulky": "Uzivatele",
+                    "Pocet sloupcu": "10",
+                    "Pocet radku": "1000",
+                    "Pocet cizich klicu": "1"
+                    }
+                    ,
+                    {
+                    "ID tabulky": "2",
+                    "Nazev tabulky": "Produkt",
+                    "Pocet sloupcu": "15",
+                    "Pocet radku": "10000",
+                    "Pocet cizich klicu": "0"
+                    }
+                    
+                ]
+                },
+                "Vysledky": {
+                    "Nacitani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "2300"
+                    },
+                    "Ukladani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "1500"
+                    },
+                    "Aktualizace": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "750"
+                    }
+                }
+                }
+                ,
+                {
+                "ID": "3",
+                "Programovaci jazyk": "C#",
+                "Web verze": "true",
+                "Desktop verze": "false",
+                "Vyvojove prostredi": "Visual Studio 2017",
+                "Datum testu": {
+                "Den": "04",
+                "Mesic": "04",
+                "Rok": "2018"
+                },
+                "Cas testu": {
+                "Hodina": "10",
+                "Minuta": "0"
+                },
+                "Pocitac": {
+                "Typ pocitace": "Notebook",
+                "Vykon CPU v GHZ": "2.2",
+                "Pocet jader CPU": "2",
+                "Velikost RAM": "8",
+                "Typ disku": "SSD",
+                "Velikost disku v GB": "256"
+                },
+                "Framework": {
+                "Nazev frameworku": "Entity Framework",
+                "Verze frameworku": "2.0",
+                "Autor frameworku": "Microsoft",
+                "Knizni verze": "true",
+                "ORM": "true"
+                },
+                "Databaze": {
+                "Nazev databaze": "MSSQL",
+                "Autor databaze": "Microsoft",
+                "Pocet tabulek": "3",
+                "Tabulka":
+                [
+                
+                    {
+                    "ID tabulky": "1",
+                    "Nazev tabulky": "Uzivatele",
+                    "Pocet sloupcu": "8",
+                    "Pocet radku": "500",
+                    "Pocet cizich klicu": "1"
+                    }
+                    ,
+                    {
+                    "ID tabulky": "2",
+                    "Nazev tabulky": "Produkty",
+                    "Pocet sloupcu": "10",
+                    "Pocet radku": "10000",
+                    "Pocet cizich klicu": "1"
+                    }
+                    ,
+                    {
+                    "ID tabulky": "3",
+                    "Nazev tabulky": "Vyrobce",
+                    "Pocet sloupcu": "4",
+                    "Pocet radku": "600",
+                    "Pocet cizich klicu": "0"
+                    }
+                    
+                ]
+                },
+                "Vysledky": {
+                    "Nacitani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "4500"
+                    },
+                    "Ukladani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "3000"
+                    },
+                    "Aktualizace": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "1000"
+                    }
+                }
+                }
+                ,
+                {
+                "ID": "2",
+                "Programovaci jazyk": "C#",
+                "Web verze": "true",
+                "Desktop verze": "false",
+                "Vyvojove prostredi": "Visual Studio 2017",
+                "Datum testu": {
+                "Den": "04",
+                "Mesic": "04",
+                "Rok": "2018"
+                },
+                "Cas testu": {
+                "Hodina": "10",
+                "Minuta": "0"
+                },
+                "Pocitac": {
+                "Typ pocitace": "Notebook",
+                "Vykon CPU v GHZ": "2.2",
+                "Pocet jader CPU": "2",
+                "Velikost RAM": "8",
+                "Typ disku": "SSD",
+                "Velikost disku v GB": "256"
+                },
+                "Framework": {
+                "Nazev frameworku": "ADO.NET",
+                "Verze frameworku": "7.5",
+                "Autor frameworku": "Microsoft",
+                "Knizni verze": "true",
+                "ORM": "false"
+                },
+                "Databaze": {
+                "Nazev databaze": "MSSQL",
+                "Autor databaze": "Microsoft",
+                "Pocet tabulek": "2",
+                "Tabulka":
+                [
+                
+                    {
+                    "ID tabulky": "1",
+                    "Nazev tabulky": "Uzivatele",
+                    "Pocet sloupcu": "7",
+                    "Pocet radku": "10000",
+                    "Pocet cizich klicu": "1"
+                    }
+                    ,
+                    {
+                    "ID tabulky": "2",
+                    "Nazev tabulky": "Produkty",
+                    "Pocet sloupcu": "115",
+                    "Pocet radku": "1000000",
+                    "Pocet cizich klicu": "0"
+                    }
+                    
+                ]
+                },
+                "Vysledky": {
+                    "Nacitani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "2500"
+                    },
+                    "Ukladani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "1200"
+                    },
+                    "Aktualizace": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "500"
+                    }
+                }
+                }
+                ,
+                {
+                "ID": "1",
+                "Programovaci jazyk": "C#",
+                "Web verze": "true",
+                "Desktop verze": "false",
+                "Vyvojove prostredi": "Visual Studio 2017",
+                "Datum testu": {
+                "Den": "04",
+                "Mesic": "04",
+                "Rok": "2018"
+                },
+                "Cas testu": {
+                "Hodina": "10",
+                "Minuta": "0"
+                },
+                "Pocitac": {
+                "Typ pocitace": "Notebook",
+                "Vykon CPU v GHZ": "2.2",
+                "Pocet jader CPU": "2",
+                "Velikost RAM": "8",
+                "Typ disku": "SSD",
+                "Velikost disku v GB": "256"
+                },
+                "Framework": {
+                "Nazev frameworku": "Dapper",
+                "Verze frameworku": "1.2",
+                "Autor frameworku": "Stack Overflow",
+                "Knizni verze": "false",
+                "ORM": "true"
+                },
+                "Databaze": {
+                "Nazev databaze": "MSSQL",
+                "Autor databaze": "Microsoft",
+                "Pocet tabulek": "1",
+                "Tabulka":
+                [
+                
+                    {
+                    "ID tabulky": "1",
+                    "Nazev tabulky": "Uzivatele",
+                    "Pocet sloupcu": "10",
+                    "Pocet radku": "1000",
+                    "Pocet cizich klicu": "0"
+                    }
+                    
+                ]
+                },
+                "Vysledky": {
+                    "Nacitani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "1000"
+                    },
+                    "Ukladani": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "100"
+                    },
+                    "Aktualizace": {
+                        "Pocet iteraci": "100000",
+                        "Vysledek v ms": "350"
+                    }
+                }
+                }
+                
+            ]
+        }
+    
