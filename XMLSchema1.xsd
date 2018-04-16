@@ -67,7 +67,7 @@
                         <xs:sequence>
                           <xs:element type="typPC" name="typ_pocitace"/>
                           <xs:element type="xs:decimal" name="vykon_CPU_GHZ"/>
-                          <xs:element type="xs:integer" name="pocet_jader_CPU"/>
+                          <xs:element type="pocetJader" name="pocet_jader_CPU"/>
                           <xs:element type="velikostRAM" name="velikost_RAM_GB"/>
                           <xs:element type="typDisku" name="typ_disku"/>
                           <xs:element type="xs:integer" name="velikost_disku_GB"/>
